@@ -1,19 +1,21 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import BookCard from "../components/BookCard";
 import { Filter } from "lucide-react";
 
 const HomePage = () => {
-  const [query, setQuery] = useState("");
-  const [books, setBooks] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [searched, setSearched] = useState(false);
-   const [limit, setLimit] = useState(25);
+  const [query, setQuery] = useState(""); // stores the search input
+  const [books, setBooks] = useState([]); // stores books fetched from API
+  const [loading, setLoading] = useState(false); // loading state for spinner
+  const [searched, setSearched] = useState(false); // whether user has searched
+  const [limit, setLimit] = useState(25); // max number of results to show
 
-  // filters
-  const [selectedLanguage, setSelectedLanguage] = useState("all");
-  const [sortBy, setSortBy] = useState("default");
+   // Filters
+  const [selectedLanguage, setSelectedLanguage] = useState("all"); // language filter
+  const [sortBy, setSortBy] = useState("default"); // sorting filter
 
+  // Fetches books from OpenLibrary API based on search query
+  // Applies the limit of results selected by the user
   const handleSearch = async () => {
     if (!query.trim()) return;
     setLoading(true);
@@ -32,7 +34,10 @@ const HomePage = () => {
     }
   };
 
-  // apply filters
+
+  // Apply Filters to books
+  // 1. Language filter
+  // 2. Sorting (year ascending/descending or edition count)
   const filteredBooks = books
     .filter((book) => {
       if (selectedLanguage === "all") return true;
@@ -89,7 +94,6 @@ const HomePage = () => {
           </ul>
         </div>
       </div>
-
       
 
       {/* Filters */}
