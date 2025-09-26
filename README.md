@@ -1,16 +1,60 @@
-# React + Vite
+# 📚 Book Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/demo-online-green)](https://book-finder-ochre-one.vercel.app/)  
+![GitHub last commit](https://img.shields.io/github/last-commit/Piyush-Singh-coder/book-finder)
+![GitHub repo size](https://img.shields.io/github/repo-size/Piyush-Singh-coder/book-finder)
+![License](https://img.shields.io/badge/license-MIT-blue)  
+![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38b2ac?logo=tailwind-css&logoColor=white)
+![DaisyUI](https://img.shields.io/badge/DaisyUI-themed-ff69b4)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🔍 Search books by **title** using [Open Library API](https://openlibrary.org/dev/docs/api/search)  
+- 🌐 Filter by **language**  
+- ↕️ Sort results by **year** or **edition count**  
+- 🔢 Choose how many books to display (limit selector)  
+- 🌗 **Dark/Light mode** toggle (stored in `localStorage`)  
+- 📱 Responsive design with TailwindCSS & DaisyUI  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔎 Search & Results
+![Search Demo](https://image2url.com/images/1758920839092-d46edc77-7450-4824-8009-067c05f5005a.png)
+
+---
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **React + Vite** ⚡  
+- **TailwindCSS** 🎨  
+- **DaisyUI** 💅 (themes & UI components)  
+- **Lucide React** ✨ (icons)  
+- **Open Library API** 📚 (book data)  
+
+---
+
+## 🔧 Setup & Run Locally
+
+```bash
+# Clone repo
+git clone https://github.com/Piyush-Singh-coder/book-finder.git
+cd book-finder
+
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+```
+## 👨‍💻 Author
+Made with ❤️ by Piyush Singh
+
